@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="https://use.typekit.net/kxa7far.css">
+      
+      <link rel="stylesheet" href="reset.css">
+
+      <style>
+   
+   @font-face {
+         font-family: "volca display bass";
+         src: url(volcadisplaybass.otf) format("opentype");
+         }
+         @font-face {
+         font-family: "volca display drum";
+         src: url(volcadisplaydrum.otf) format("opentype");
+         }
+
+         body {
+         font-family: alternate-gothic-atf, sans-serif;
+         font-weight: 300;
+         font-style: normal;
+         }
+         
+         main {
+         margin-top:30px;
+         margin-bottom:30px;
+max-width:900px;
+    background: #ddd;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    
+         }
+         
+         
+         h1 {
+         font-family: interstate,sans-serif;
+         font-weight: 700;
+         font-style: normal;
+         font-size: 200%;
+         }
+         
+         
+         table, th, td {
+         empty-cells: show;
+         vertical-align: baseline;
+         padding:10px;
+         }
+         
+         .display {
+         width: 20%;
+         }
+
+          .displaymost, .displayfm, .displaydrum {
+          background:#222;
+          border-left: 2px solid white;
+          padding:20px;
+          }
+         
+		.displaymost{
+		font-size:170%;
+		}
+         
+         .displaymost, .displayfm {
+         font-family: "volca display bass", Arial;
+	text-shadow: 0px 0px 2px red;
+           color:red;
+
+         }
+         
+         .displayfm, .displaydrum {
+                  		font-size:120%;
+}
+         
+         .displaydrum {
+         font-family: "volca display drum", Arial;
+         color:orange;
+ text-shadow: 0px 0px 3px orange;
+
+         }
+         
+      .drumsetting {
+        font-feature-settings: "ss01" 1;
+		 float:right;
+		 margin-left: 8px;
+         }
+  
+         .row {
+         text-align:left;
+         color:maroon;
+         }
+         
+         .unlit {
+         
+         }
+         
+         .lit {
+         }
+         
+
+         
+         .ledunlit {
+  height: 10px;
+  width: 10px;
+  background-color: #333;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+    
+    
+             .ledlit {
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+  box-shadow: 0px 0px 5px red;
+}
+       
+         .step {
+         text-align:left;
+width:15%;
+         }
+         
+         .stepbutton {
+         text-transform: uppercase;
+         font-weight:600;
+         }
+         
+
+         
+         .step {
+
+         }
+         
+         tr, .thdisplay {
+                  border-bottom: 2px solid white;
+
+         }
+         
+         .empty {
+         border-bottom: 1px;
+         }
+  
+         
+  p, li {
+  margin-left:5%;
+  line-height:180%;
+  font-size:120%;
+  }
+  
+  th {
+  font-size:120%;
+  letter-spacing:1px;
+  }
+  
+  h1 {
+  margin:5%;
+  margin-bottom:40px;
+  }
+  
+  
+         
+li {
+list-style-type:circle;
+} 
+
+table {
+margin-top:5%;
+} 
+
+.default::after {
+content: "Default";
+font-weight: bold;
+font-size:80%;
+text-transform:uppercase;
+}     
+
+ 
+         
+      </style>
+   </head>
+   <body>
+   <main>
+      <h1>volca global settings cheat sheet</h1>
+      <p>To access global settings, turn on your volca while holding FUNC button</p>
+      <ul>
+      <li>Volca Keys and Modular don't have a display.</li>
+      <li>Volca Modular doesn't have settings 6 and 7</li>
+      </ul>
+
+      <table>
+         <tr class='empty'>
+            <th></th>
+            <th rowspan='2'>Led <br>unlit/lit</th>
+            <th class = 'thdisplay' colspan='3'>Display</th>
+         </tr>
+         <tr>
+            <th></th>
+            <th class='display'>Most</th>
+            <th class='display'>FM</th>
+            <th class='display'>Drum</th>
+         </tr>
+         <tr>
+            <th class='step'  rowspan='2'></span><span class='stepbutton'>Step 1</span><br>Auto power-off function</td>
+            <td class='unlit'><span class='ledunlit'></span>Disabled</td>
+            <td class='displaymost'>AP.oF</td>
+            <td class='displayfm'>AutoP OFF</td>
+            <td class='displaydrum'>APO <span class='drumsetting'>off</td>
+         </tr>
+         <tr>
+            <td class='lit'><span class='ledlit'></span><span class='default'>Enabled</span</td>
+            <td class='displaymost'>AP.on</td>
+            <td class='displayfm'>AutoP On</td>
+            <td class='displaydrum'>APO <span class='drumsetting'>on</td>
+         </tr>
+         <tr>
+            <th class='step'  rowspan='2'><span class='stepbutton'>Step 2</span><br>Battery type selection</td>
+            <td class='unlit'><span class='ledunlit'></span><span class='default'>Alkaline</span</td>
+            <td class='displaymost'>bt.AL</td>
+            <td class='displayfm'>bAtt AL</td>
+            <td class='displaydrum'>BAT <span class='drumsetting'>alka</td>
+         </tr>
+         <tr>
+            <td class='lit'><span class='ledlit'></span>Nickel-metal hydride</td>
+            <td class='displaymost'>bt.nH</td>
+            <td class='displayfm'>bAtt nH</td>
+            <td class='displaydrum'>BAT <span class='drumsetting'>nick</td>
+         </tr>
+         <tr>
+            <th class='step'  rowspan='2'><span class='stepbutton'>Step 3</span><br>Sync Out polarity</td>
+            <td class='unlit'><span class='ledunlit'></span><span class='default'>Rise</span</td>
+            <td class='displaymost'>So.Hi</td>
+            <td class='displayfm'>SyncOt HI</td>
+            <td class='displaydrum'>SYO <span class='drumsetting'>high</td>
+         </tr>
+         <tr>
+            <td class='lit'><span class='ledlit'></span>Fall</td>
+            <td class='displaymost'>So.Lo</td>
+            <td class='displayfm'>SyncOt Lo</td>
+            <td class='displaydrum'>SYO <span class='drumsetting'>low</td>
+         </tr>
+         <tr>
+            <th class='step'  rowspan='2'><span class='stepbutton'>Step 4</span><br>Sync In polarity</td>
+            <td class='unlit'><span class='ledunlit'></span><span class='default'>Rise</span</td>
+            <td class='displaymost'>SI.HI</td>
+            <td class='displayfm'>SyncIn HI</td>
+            <td class='displaydrum'>SYI <span class='drumsetting'>high</td>
+         </tr>
+         <tr>
+            <td class='lit'><span class='ledlit'></span>Fall</td>
+            <td class='displaymost'>SI.Lo</td>
+            <td class='displayfm'>SyncIn Lo</td>
+            <td class='displaydrum'>SYI <span class='drumsetting'>low</td>
+         </tr>
+         <tr>
+            <th class='step'  rowspan='2'><span class='stepbutton'>Step 5</span><br>Tempo range settings</td>
+            <td class='unlit'><span class='ledunlit'></span><span class='default'>Narrow (56-240)</span</td>
+            <td class='displaymost'>tP.nr</td>
+            <td class='displayfm'>TEmPo nAr</td>
+            <td class='displaydrum'>TMP <span class='drumsetting'>narr</td>
+         </tr>
+         <tr>
+            <td class='lit'><span class='ledlit'></span>Full (10-600)</td>
+            <td class='displaymost'>tP.FL</td>
+            <td class='displayfm'>TEmPo FuL</td>
+            <td class='displaydrum'>TMP <span class='drumsetting'>full</td>
+         </tr>
+         <tr>
+            <th class='step'  rowspan='2'><span class='stepbutton'>Step 6</span><br>MIDI Clock Src</td>
+            <td class='unlit'><span class='ledunlit'></span>Internal</td>
+            <td class='displaymost'>CL.In</td>
+            <td class='displayfm'>MdCLK Int</td>
+            <td class='displaydrum'>MCL <span class='drumsetting'>int</td>
+         </tr>
+         <tr>
+            <td class='lit'><span class='ledlit'></span><span class='default'>Auto</span</td>
+            <td class='displaymost'>CL.At</td>
+            <td class='displayfm'>MdCLK Aut</td>
+            <td class='displaydrum'>MCL <span class='drumsetting'>auto</td>
+         </tr>
+         <tr>
+            <th class='step'  rowspan='2'><span class='stepbutton'>Step 7</span><br>MIDI RX ShortMessage</td>
+            <td class='unlit'><span class='ledunlit'></span>Off</td>
+            <td class='displaymost'>St.oF</td>
+            <td class='displayfm'>MdShrt OF</td>
+            <td class='displaydrum'>MST <span class='drumsetting'>off</td>
+         </tr>
+         <tr>
+            <td class='lit'><span class='ledlit'></span><span class='default'>On</span</td>
+            <td class='displaymost'>St.on</td>
+            <td class='displayfm'>MdShrt On</td>
+            <td class='displaydrum'>MST <span class='drumsetting'>on</td>
+         </tr>
+         <tr>
+            <th class='step'  rowspan='2'><span class='stepbutton'>Step 8</span><br>Sync input/output unit</td>
+            <td class='unlit'><span class='ledunlit'></span><span class='default'>Once every 2 steps</span</td>
+            <td class='displaymost'>StP.2</td>
+            <td class='displayfm'>SyncStp 2</td>
+            <td class='displaydrum'>SYC <span class='drumsetting'>2stp</td>
+         </tr>
+         <tr>
+            <td class='lit'><span class='ledlit'></span>Once a step</td>
+            <td class='displaymost'>StP.1</td>
+            <td class='displayfm'>SyncStp 1</td>
+            <td class='displaydrum'>SYC <span class='drumsetting'>1stp</td>
+         </tr>
+      </table>
+      </main>
+   </body>
+</html>
